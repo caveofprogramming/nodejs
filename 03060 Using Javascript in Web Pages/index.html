@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<HTML>
+
+<HEAD>
+    <STYLE>
+        #greeting {
+            color: blue;
+            font-size: 3em;
+            border: 1px solid gray;
+            width: 300px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 200px;
+            text-align: center;
+            padding: 40px;
+        }
+    </STYLE>
+</HEAD>
+
+<BODY>
+    <DIV id="greeting">
+        <BUTTON id="hello-button">Click me!</BUTTON>
+    </DIV>
+
+    <SCRIPT>
+        window.onload = function() {
+            let helloButton = document.getElementById('hello-button');
+            
+            helloButton.onclick = function() {
+                let greetingDiv = document.getElementById('greeting');
+
+                greetingDiv.style.backgroundColor = 'green';
+            }
+        }
+    </SCRIPT>
+</BODY>
+
+</HTML>
